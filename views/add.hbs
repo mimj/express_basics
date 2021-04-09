@@ -1,0 +1,11 @@
+<h1>Create a new chat room</h1>
+
+<form action="/admin/rooms/add" method="post">
+    <fieldset class="form-group">
+        <label for="name">Name:</label>
+        <input name="name" type="text" placeholder="Enter a name">
+        <small class="text-muted">Give your chat room a meaningful name</small>
+    </fieldset>
+    <button type="submit" class="btn btn-primary">Create new Chat room</button>
+    <a href="/admin/rooms" class="bn btn-default">Cancel</a>
+</form>

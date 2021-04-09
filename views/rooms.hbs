@@ -1,0 +1,31 @@
+<h1>Chat Rooms:</h1>
+
+<a href="/admin/rooms/add" class="btn btn-primary mb-2">Add new chat room</a>
+
+<table class="table ">
+    <thead>
+    <tr>
+        <th></th>
+        <th>Name</th>
+        <th></th>
+        <th>Id</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#each rooms}}
+        <tr>
+            <td>
+                <a href="/admin/rooms/delete/{{this.id}}">
+                    <span class="fas fa-times"></span>
+                </a>
+            </td>
+            <td>{{this.name}}</td>
+            <td><a href="/admin/rooms/edit/{{this.id}}">
+                <span class="fas fa-pen"></span>
+            </a></td>
+            <td>{{this.id}}</td>
+        </tr>
+    {{/each}}
+    </tbody>
+
+</table>
